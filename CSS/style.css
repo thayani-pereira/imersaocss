@@ -1,38 +1,296 @@
+/*Responsive reset do css*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /*contar a borda interna*/
+}
+
 body {
-
-    
-    background-image:url('https://image.freepik.com/vetores-gratis/imagens-animadas-abstratas-neon-lines_23-2148344065.jpg');
-    background-size:auto 100vh;  /* Altura por largura matem a porporção*/
-    font-family: Arial;
-    height: 100vh;
+  background-image: url("../img/planodefundo.png");
+  background-size: auto 100vh; /* Altura por largura matem a porporção*/
+  font-family: Arial;
+  height: 100vh;
+  font-size: 10px;
+}
+/* se a tela tiver pelo menos 400 px vai carregar esse stilo breackpoint */
+@media (min-width: 400px) {
+  body {
+    font-size: 12px;
   }
+}
+@media (min-width: 600px) {
+  body {
+    font-size: 18px;
+  }
+}
+@media (min-width: 1200px) {
+  body {
+    font-size: 22px;
+  }
+}
 
-  .menu{
-  background-color: white; /*color de fundo*/
+header {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.menu {
+  background-color: black; /*color de fundo*/
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  z-index: 1;
 }
 .menu li {
   list-style: none; /*estilo de lista sem*/
-
 }
 .menu ul {
- display: flex;  /**/
- justify-content: space-around;
+  display: flex; /**/
+  justify-content: space-around;
+}
+
+.menu a {
+  padding: 10px 20px;
+  display: block;
+  font-family: "Press Start 2P", cursive;
+  transition: background-color 1s, color 1s;
+}
+
+.menu a:hover {
+  background-color: teal;
+  color: white;
+}
+
+.menu a:active {
+  background-color: teal;
+  color: black;
 }
 
 a {
-color:teal;
-text-decoration: none;
- 
+  color: teal;
+  text-decoration: none;
 }
 a:hover {
   text-decoration: underline;
+  color: white;
 }
 .site-subtitle,
 .site-title {
-  color:whitesmoke ; 
+  color: white;
   text-align: center;
 }
+.site-title {
+  font-size: 4em;
+  font-style: italic;
+  font-family: "Dancing Script", cursive;
+}
 .site-subtitle {
-  font-style:italic;
+  font-style: italic;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.8em;
+}
+.title {
+  transition: all 2s;
+  animation: linear 2s animacaoTitulo forwards;
+}
+/* .title:hover{
+  transform: scale(1) translateY(0vh);
+  opacity: 1;
+  
+ 
+} */
+@keyframes animacaoTitulo {
+  0% {
+    transform: scale(0.5) translateY(50vh);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1) translateY(0);
+    opacity: 1;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.sobre h2,
+.contato h2,
+.portifolio h2 {
+  font-family: "Roboto", sans-serif;
+  color: teal;
+  margin-bottom: 1em;
+  font-size: 3em;
+  text-align: center;
+}
+
+.card-front figcaption,
+.sobre p {
+  color: white;
+  margin-bottom: 1.4em;
+  text-indent: 1.4em;
+  text-align: justify;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
+
+.card-front figcaption{
+  text-align: center;
+}
+
+.sobre a {
+  color: teal;
+  text-decoration: underline;
+}
+.sobre a:hover {
+  background-color: black;
+  text-decoration: none;
+}
+.sobre .avatar {
+  float: right;
+  margin-left: 2em;
+}
+
+.sobre .avatar img {
+  /* border-radius: 5;*/
+  -webkit-clip-path: polygon(
+    50% 0%,
+    83% 12%,
+    100% 43%,
+    94% 78%,
+    68% 100%,
+    32% 100%,
+    6% 78%,
+    0% 43%,
+    17% 12%
+  );
+  clip-path: polygon(
+    50% 0%,
+    83% 12%,
+    100% 43%,
+    94% 78%,
+    68% 100%,
+    32% 100%,
+    6% 78%,
+    0% 43%,
+    17% 12%
+  );
+}
+.contato h2:hover,
+.sobre h2:hover,
+.portifolio h2:hover {
+  font-family: "Roboto", sans-serif;
+  color: white;
+  margin-bottom: 1em;
+  font-size: 3em;
+  text-align: center;
+}
+
+.portifolio .grid {
+  display: grid;
+  gap: 2em;
+  align-content: center; /*coluna y*/
+  justify-content: center; /*Linha x*/
+}
+
+
+
+@media (min-width: 560px) {
+  .portifolio .grid {
+    grid-template-columns: 240px 240px;
+  }
+}
+@media (min-width: 880px) {
+  .portifolio .grid {
+    grid-template-columns: repeat(3, 260px);
+    height: calc(100vh - 48px - 8em);
+  }
+}
+.portifolio figure {
+  text-align: center;
+}
+.sobre,
+.contato,
+.portifolio {
+  padding: 2em;
+  min-height: 100vh;
+}
+.img-portifolio {
+  height: 180px;
+  width: 240px;
+  object-fit: cover;
+  object-position: left bottom;
+  border-radius: 150px;
+  transition: tranform 500ms;
+}
+/* .img-portifolio:hover {
+  transform: scale(1.2) rotateX(45deg);
+} */
+.flip-card{
+ perspective: 500px;
+}
+
+.card {
+  position: relative;
+  transform-style:flat;
+  transition: transform 1s;
+  margin-bottom:-50px;
+
+}
+.flip-card:hover .card {
+  transform: rotateY(180deg);
+}
+/*.card-front,
+.card-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  backface-visibility: hidden;
+}
+
+
+@media(max-width: 559px) {
+  .card-front,
+  .card-back {
+    left: -120px;
+  }
+}
+
+/*.card-back {
+  background-color: white;
+  height: 180px;
+  width: 240px;
+  transform: rotateY(180deg);
+}
+*/
+/* @media(min-width: 1200px){
+  .img-portifolio {
+  height: auto;
+  width: 100%;
+  }
+} */
+.contato a {
+  color: teal;
+  font-size: 3em;
+  transition: text-shadow 1s;
+}
+
+.contato a:hover {
+  color: white;
+  text-decoration: none;
+  text-shadow: -6px -10px 10px rgba(255, 255, 255, 0.5);
+}
+
+.contato a:active {
+  text-decoration: none;
+  text-shadow: -6px -10px 10px rgba(0, 0, 10, 0.6);
+}
+.contato .icons {
+  text-align: center;
 }

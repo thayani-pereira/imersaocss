@@ -6,19 +6,114 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Thayani Pereira</title>
   <link rel="stylesheet" href="CSS/style.css">
-
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto&family=Libre+Franklin:ital,wght@1,100&display&family=Dancing+Script&family=Press+Start+2P&family=Roboto&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/8f307ad958.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-  <nav class="menu">
-    <ul>
-      <li><a href="#">Sobre</a></li>
-      <li><a href="#">Portfólio</a></li>
-      <li><a href="#">Contato</a></li>
-    </ul>
-  </nav>
-  <h1 class="site-title">Thayani Me Pereira</h1>
-  <h2 class="site-subtitle"> Web Developer</he>
+  <header>
+    <nav class="menu">
+      <ul class="container">
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+    <div class="title">
+      <h1 class="site-title"> Prof.Thayani da Silva Pereira</h1>
+      <h2 class="site-subtitle"> Web Developer</h2>
+    </div>
+  </header>
+  <section class="sobre container" id="sobre">
+    <h2>Sobre</h2>
+    <figure class="avatar">
+      <img src="img/thayani.jfif" alt="Thayani da Silva Pereira">
+    </figure>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id delectus omnis repellat temporibus commodi
+      accusamus tempora eveniet quis aperiam, hic ipsum dolor aut excepturi distinctio, recusandae explicabo pariatur
+      non similique.
+    </p>
+    <p>
+      Dignissimos esse minima voluptatem optio temporibus beatae officiis adipisci sed quibusdam ipsam ea accusamus
+      rem ad, eum molestias. Quo eos deleniti alias quam laboriosam cum assumenda impedit, explicabo non totam.
+    </p>
+    <p>
+      Neque, quaerat ipsa doloribus culpa dolor corporis molestiae nihil consectetur nostrum, amet rem ratione
+      quisquam quidem. At ex non doloremque hic, perspiciatis nemo porro nulla odit qui eaque sequi quidem?
+    </p>
+    <p>
+      Neque fugiat cupiditate minima ea laboriosam. Magni quae nihil, adipisci corporis sint harum tempore aut aliquid
+      quod voluptatem libero, cum placeat? Provident sapiente et error corporis porro impedit iste veniam.
+    </p>
+    <p>Este site foi constrído a <a href="https://www.alura.com.br/imersao-css/">Imersão CSS</a>
+    </p>
+
+  </section>
+  <section class="portifolio container" id="projetos">
+    <h2>Projetos</h2>
+    <div class="grid">
+      <div class="flip-card">
+        <div class="card">
+          <figure class="card-front">
+            <img class="img-portifolio" src="img/e-commercer.jfif" alt="eCommerce">
+            <figcaption>eCommerce</figcaption>
+          </figure>
+          <div class="card-back">
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="card">
+          <figure class="card-front">
+            <img class="img-portifolio" src="img/mobile3.jpeg" alt=">Mobile">
+            <figcaption>Mobile</figcaption>
+          </figure>
+          <div class="card-back">
+             
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="card">
+          <figure class="card-front">
+            <img class="img-portifolio" src="./img/webdisigner.jfif" alt="Web design">
+            <figcaption>Web design</figcaption>
+          </figure>
+          <div class="card-back">
+            
+          </div>
+        </div>
+      </div>
+      <div class="flip-card">
+        <div class="card">
+          <figure class="card-front">
+            <img class="img-portifolio" src="./img/projetospessoais.jfif" alt="Projetos pessoais">
+            <figcaption>Projetos pessoais</figcaption>
+          </figure>
+          <div class="card-back">
+            
+          </div>
+        </div>
+      </div>
+      </div>
+  </section>
+  <section class="contato container" id="contato">
+    <h2>Contato</h2>
+    <div class="grid icons">
+      <a target="_blank" href="https://github.com/thayani-pereira">
+        <i class="fab fa-github"></i>
+      </a>
+      <a target="_blank" href="https://www.linkedin.com/in/thayani-pereira-67318148/">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="mailto:thayani.pereira@etec.sp.gov.br">
+        <i class="fas fa-at"></i>
+      </a>
+    </div>
+  </section>
 </body>
 
 </html>

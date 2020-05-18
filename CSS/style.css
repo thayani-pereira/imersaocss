@@ -7,7 +7,17 @@
 }
 
 body {
-  background-image: url("../img/planodefundo.png");
+
+background-image: -moz-linear-gradient(90deg, rgba(123,137,140,0.5) 0%, rgba(102,98,180,0.5) 0%, rgba(50,57,57,0.5) 100%), url("../img/planodefundo.png");
+background-image: -webkit-linear-gradient(90deg, rgba(123,137,140,0.5) 0%, rgba(102,98,180,0.5) 0%, rgba(50,57,57,0.5) 100%), url("../img/planodefundo.png");
+background-image: linear-gradient(90deg, rgba(123,137,140,0.5) 0%, rgba(102,98,180,0.5) 0%, rgba(50,57,57,0.5) 100%), url("../img/planodefundo.png");
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#7b898c",endColorstr="#323939",GradientType=1);
+
+/* background-image: -moz-linear-gradient(90deg, rgba(2,0,36,0.5) 0%, rgba(123,137,140,0.5) 0%, rgba(0,212,255,0.5) 100%), url("../img/planodefundo.png");
+background-image: -webkit-linear-gradient(90deg, rgba(2,0,36,0.5) 0%, rgba(123,137,140,0.5) 0%, rgba(0,212,255,0.5) 100%), url("../img/planodefundo.png") ;
+background-image: linear-gradient(90deg, rgba(2,0,36,0.5) 0%, rgba(123,137,140,0.5) 0%, rgba(0,212,255,0.5) 100%), url("../img/planodefundo.png") ; */
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#00d4ff",GradientType=1);
+  /* background-image: url("../img/planodefundo.png"); */
   background-size: auto 100vh; /* Altura por largura matem a porporção*/
   font-family: Arial;
   height: 100vh;
@@ -133,7 +143,7 @@ a:hover {
 .card-front figcaption,
 .sobre p {
   color: white;
-  margin-bottom: 1.4em;
+  /* margin-bottom:200px; */
   text-indent: 1.4em;
   text-align: justify;
   font-family: "Roboto", sans-serif;
@@ -234,6 +244,7 @@ a:hover {
 } */
 .flip-card{
  perspective: 500px;
+ margin-bottom: 30px;
 }
 
 .card {
@@ -246,13 +257,14 @@ a:hover {
 .flip-card:hover .card {
   transform: rotateY(180deg);
 }
-/*.card-front,
+.card-front,
 .card-back {
-  position: absolute;
+  /* position: absolute;
   top: 0;
   left: 0;
-  backface-visibility: hidden;
-}
+  backface-visibility: hidden; */
+  margin-bottom: 20px;
+} 
 
 
 @media(max-width: 559px) {

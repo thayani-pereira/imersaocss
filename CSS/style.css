@@ -139,11 +139,12 @@ a:hover {
   margin-bottom: 1em;
   font-size: 3em;
   text-align: center;
+  margin-top: 30px;
 }
 
 .card-front figcaption,
 .sobre p {
-  color: white;
+  color: white;  
   /* margin-bottom:200px; */
   text-indent: 1.4em;
   text-align: justify;
@@ -153,6 +154,7 @@ a:hover {
 
 .card-front figcaption{
   text-align: center;
+  font-size:1.2em ;
 }
 
 .sobre a {
@@ -229,6 +231,10 @@ a:hover {
   padding: 2em;
   min-height: 100vh;
 }
+.contato{
+  min-height: 200px;
+}
+
 .img-portifolio {
   height: 180px;
   width: 240px;

@@ -7,11 +7,12 @@
 }
 
 body {
-
-background-image: -moz-linear-gradient(90deg, rgba(123,137,140,0.5) 0%, rgba(102,98,180,0.5) 0%, rgba(50,57,57,0.5) 100%), url("../img/planodefundo.png");
-background-image: -webkit-linear-gradient(90deg, rgba(123,137,140,0.5) 0%, rgba(102,98,180,0.5) 0%, rgba(50,57,57,0.5) 100%), url("../img/planodefundo.png");
-background-image: linear-gradient(90deg, rgba(123,137,140,0.5) 0%, rgba(102,98,180,0.5) 0%, rgba(50,57,57,0.5) 100%), url("../img/planodefundo.png");
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#7b898c",endColorstr="#323939",GradientType=1);
+  background-image:url("../img/planodefundo.png");
+  /* url("../img/planodefundo.png"); */
+/* background-image: -moz-linear-gradient(90deg, rgba(123,137,140,0.5) 0%, rgba(102,98,180,0.5) 0%, rgba(50,57,57,0.5) 100%), url("../img/planodefundo.png"); */
+/* background-image: -webkit-linear-gradient(90deg, rgba(123,137,140,0.5) 0%, rgba(102,98,180,0.5) 0%, rgba(50,57,57,0.5) 100%), url("../img/planodefundo.png"); */
+/* background-image: linear-gradient(90deg, rgba(123,137,140,0.5) 0%, rgba(102,98,180,0.5) 0%, rgba(50,57,57,0.5) 100%), url("../img/planodefundo.png"); */
+/* filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#7b898c",endColorstr="#323939",GradientType=1); */
 
 /* background-image: -moz-linear-gradient(90deg, rgba(2,0,36,0.5) 0%, rgba(123,137,140,0.5) 0%, rgba(0,212,255,0.5) 100%), url("../img/planodefundo.png");
 background-image: -webkit-linear-gradient(90deg, rgba(2,0,36,0.5) 0%, rgba(123,137,140,0.5) 0%, rgba(0,212,255,0.5) 100%), url("../img/planodefundo.png") ;
@@ -208,9 +209,6 @@ a:hover {
   align-content: center; /*coluna y*/
   justify-content: center; /*Linha x*/
 }
-
-
-
 @media (min-width: 560px) {
   .portifolio .grid {
     grid-template-columns: 240px 240px;
